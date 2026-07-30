@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Try an Agent - Meridian AI</title>
+<meta name="description" content="Try a live Meridian AI agent right now with mock data. No signup required.">
+<link rel="icon" href="assets/public/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/navbar.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/pages/try-agent.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="container navbar__inner">
+    <div class="navbar__left">
+      <a href="index.html" class="navbar__logo">
+        <img src="assets/public/logo.png" alt="Meridian" style="width:28px;height:28px;border-radius:6px;">
+        Meridian
+      </a>
+      <nav class="navbar__links">
+        <div class="navbar__dropdown">
+          <a href="#" class="navbar__link">Product <i class="fa-solid fa-chevron-down" style="font-size:11px;"></i></a>
+          <div class="navbar__dropdown-panel">
+            <a href="features.html" class="navbar__dropdown-item"><i class="fa-solid fa-diagram-project"></i> Features</a>
+            <a href="use-cases.html" class="navbar__dropdown-item"><i class="fa-solid fa-layer-group"></i> Use-cases</a>
+            <a href="try-agent.html" class="navbar__dropdown-item"><i class="fa-solid fa-bolt"></i> Try an Agent</a>
+          </div>
+        </div>
+        <a href="use-cases.html" class="navbar__link">Solutions</a>
+        <a href="pricing.html" class="navbar__link">Pricing</a>
+        <div class="navbar__dropdown">
+          <a href="#" class="navbar__link">Resources <i class="fa-solid fa-chevron-down" style="font-size:11px;"></i></a>
+          <div class="navbar__dropdown-panel">
+            <a href="blog/index.html" class="navbar__dropdown-item"><i class="fa-solid fa-newspaper"></i> Blog</a>
+            <a href="customers/index.html" class="navbar__dropdown-item"><i class="fa-solid fa-quote-left"></i> Customers</a>
+            <a href="faq.html" class="navbar__dropdown-item"><i class="fa-solid fa-circle-question"></i> FAQ</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="navbar__right">
+      <a href="login.html" class="btn btn--ghost btn--sm">Log in</a>
+      <a href="register.html" class="btn btn--primary btn--sm">Get started</a>
+      <button class="navbar__toggle" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </div>
+</header>
+
+<div class="navbar__mobile">
+  <div class="navbar__mobile-head">
+    <a href="index.html" class="navbar__logo">
+      <img src="assets/public/logo.png" alt="Meridian" style="width:28px;height:28px;border-radius:6px;">
+      Meridian
+    </a>
+    <button class="navbar__mobile-close" aria-label="Close menu"><i class="fa-solid fa-xmark" style="font-size:20px;"></i></button>
+  </div>
+  <nav class="navbar__mobile-links">
+    <a href="features.html" class="navbar__mobile-link">Features</a>
+    <a href="use-cases.html" class="navbar__mobile-link">Solutions</a>
+    <a href="pricing.html" class="navbar__mobile-link">Pricing</a>
+    <a href="blog/index.html" class="navbar__mobile-link">Resources</a>
+    <a href="try-agent.html" class="navbar__mobile-link">Try an Agent</a>
+  </nav>
+  <div class="navbar__mobile-cta">
+    <a href="login.html" class="btn btn--secondary btn--full">Log in</a>
+    <a href="register.html" class="btn btn--primary btn--full">Get started</a>
+  </div>
+</div>
+
+<main>
+
+<section class="section tool-hero">
+  <div class="container" style="max-width:700px;">
+    <span class="badge badge--primary">Live demo &middot; No signup required</span>
+    <h1 class="text-display" style="margin-top:16px;">Try a Meridian agent right now</h1>
+    <p class="text-body-lg" style="margin:12px auto 0;">Pick a preset, paste in some real-looking input, and watch an agent do the work. This is a live sandbox with mock data - nothing here touches a real system.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0;">
+  <div class="container" style="max-width:1024px;">
+    <div class="tool-card" data-tool>
+      <div class="tool-card__tabs">
+        <div class="tabs__list">
+          <button class="tabs__tab tabs__tab--active" data-preset="lead">Lead Qualifier</button>
+          <button class="tabs__tab" data-preset="ticket">Ticket Triage</button>
+          <button class="tabs__tab" data-preset="meeting">Meeting Summarizer</button>
+        </div>
+      </div>
+      <div class="tool-card__body">
+        <div class="tool-card__input-panel">
+          <div class="field">
+            <label class="field__label" data-tool-label>Lead description</label>
+            <textarea class="textarea input--error-target" data-tool-input rows="6" placeholder="Paste a lead description..."></textarea>
+            <span class="field__error" data-tool-input-error><i class="fa-solid fa-circle-exclamation"></i> Please enter some text to run the agent.</span>
+          </div>
+          <div class="tool-card__examples" data-tool-examples></div>
+          <div class="row gap-3" style="flex-wrap:wrap;">
+            <button class="btn btn--primary" data-run-btn><i class="fa-solid fa-play"></i> Run Agent</button>
+            <button class="btn btn--ghost" data-error-btn>Simulate error</button>
+            <button class="btn btn--ghost" data-clear-btn>Clear</button>
+          </div>
+        </div>
+        <div class="tool-card__output-panel">
+          <div class="tool-state tool-state--empty is-active" data-state="empty">
+            <i class="fa-solid fa-robot"></i>
+            <p class="text-body-sm">Your agent's output will appear here. Enter details on the left and click Run Agent.</p>
+          </div>
+          <div class="tool-state tool-state--loading" data-state="loading">
+            <div class="progress-bar"><div class="progress-bar__fill"></div></div>
+            <div class="loading-steps" data-loading-steps></div>
+          </div>
+          <div class="tool-state tool-state--result" data-state="result">
+            <div data-result-body></div>
+            <button class="btn btn--secondary btn--sm" data-retry-btn style="margin-top:var(--space-4); align-self:flex-start;">Run again</button>
+          </div>
+          <div class="tool-state tool-state--error" data-state="error">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            <p class="text-h6">Something went wrong</p>
+            <p class="text-body-sm">The agent couldn't complete this run. This is a simulated failure for demo purposes.</p>
+            <button class="btn btn--primary btn--sm" data-retry-btn>Try again</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="container" style="max-width:900px;">
+    <div class="section-head">
+      <h2 class="text-h2">How this demo works</h2>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step__num">1</div>
+        <p class="text-h6">Pick a preset</p>
+        <p class="text-body-sm" style="margin-top:8px;">Choose Lead Qualifier, Ticket Triage, or Meeting Summarizer.</p>
+      </div>
+      <div class="step">
+        <div class="step__num">2</div>
+        <p class="text-h6">Paste input or use an example</p>
+        <p class="text-body-sm" style="margin-top:8px;">Type your own scenario or click one of the ready-made examples.</p>
+      </div>
+      <div class="step">
+        <div class="step__num">3</div>
+        <p class="text-h6">Watch the agent work</p>
+        <p class="text-body-sm" style="margin-top:8px;">See a realistic step-by-step run and a mock result, powered by sample data only.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="cta-band cta-band--dark">
+      <h2 class="text-h2">Like what you see?</h2>
+      <p class="text-body" style="margin-top:12px;">Create a free account and build your first real agent in minutes.</p>
+      <div class="row gap-3 row--center" style="margin-top:24px;">
+        <a href="register.html" class="btn btn--primary btn--lg">Get started free</a>
+        <a href="pricing.html" class="btn btn--dark btn--lg">View pricing</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__col footer__brand-col">
+        <a href="index.html" class="footer__brand">
+          <img src="assets/public/logo.png" alt="Meridian" style="width:28px;height:28px;border-radius:6px;">
+          Meridian
+        </a>
+        <p class="footer__desc">The AI workspace where teams build, deploy, and manage intelligent agents.</p>
+      </div>
+      <div class="footer__col">
+        <p class="footer__heading">Product <i class="fa-solid fa-chevron-down footer__accordion-trigger"></i></p>
+        <div class="footer__links">
+          <a href="features.html">Features</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="try-agent.html">Try an Agent</a>
+          <a href="use-cases.html">Use-cases</a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <p class="footer__heading">Company <i class="fa-solid fa-chevron-down footer__accordion-trigger"></i></p>
+        <div class="footer__links">
+          <a href="about.html">About</a>
+          <a href="customers/index.html">Customers</a>
+          <a href="blog/index.html">Blog</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <p class="footer__heading">Resources <i class="fa-solid fa-chevron-down footer__accordion-trigger"></i></p>
+        <div class="footer__links">
+          <a href="resources.html">Resource hub</a>
+          <a href="faq.html">FAQ</a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <p class="footer__heading">Legal <i class="fa-solid fa-chevron-down footer__accordion-trigger"></i></p>
+        <div class="footer__links">
+          <a href="legal/privacy-policy.html">Privacy Policy</a>
+          <a href="legal/terms-of-service.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copyright">© 2026 Meridian AI, Inc. All rights reserved.</p>
+      <div class="footer__social">
+        <a href="#" aria-label="Twitter/X"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<div class="cookie-banner">
+  <p class="text-body-sm" style="color:rgba(255,255,255,0.85);">We use cookies to improve your experience. By using Meridian, you agree to our <a href="legal/privacy-policy.html" style="text-decoration:underline;">Privacy Policy</a>.</p>
+  <button class="btn btn--dark btn--sm cookie-banner__btn" style="align-self:flex-start;">Got it</button>
+</div>
+
+<script src="js/data/mock-data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/try-agent.js"></script>
+</body>
+</html>

@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About - Meridian AI</title>
+<meta name="description" content="Meridian AI is building the workspace where teams design, deploy, and manage AI agents. Learn about our mission and team.">
+<link rel="icon" href="assets/public/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/navbar.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/pages/content.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="container navbar__inner">
+    <div class="navbar__left">
+      <a href="index.html" class="navbar__logo">
+        <img src="assets/public/logo.png" alt="Meridian" style="width:28px;height:28px;border-radius:6px;">
+        Meridian
+      </a>
+      <nav class="navbar__links">
+        <div class="navbar__dropdown">
+          <a href="#" class="navbar__link">Product <i class="fa-solid fa-chevron-down" style="font-size:11px;"></i></a>
+          <div class="navbar__dropdown-panel">
+            <a href="features.html" class="navbar__dropdown-item"><i class="fa-solid fa-diagram-project"></i> Features</a>
+            <a href="use-cases.html" class="navbar__dropdown-item"><i class="fa-solid fa-layer-group"></i> Use-cases</a>
+            <a href="try-agent.html" class="navbar__dropdown-item"><i class="fa-solid fa-bolt"></i> Try an Agent</a>
+          </div>
+        </div>
+        <a href="use-cases.html" class="navbar__link">Solutions</a>
+        <a href="pricing.html" class="navbar__link">Pricing</a>
+        <div class="navbar__dropdown">
+          <a href="#" class="navbar__link">Resources <i class="fa-solid fa-chevron-down" style="font-size:11px;"></i></a>
+          <div class="navbar__dropdown-panel">
+            <a href="blog/index.html" class="navbar__dropdown-item"><i class="fa-solid fa-newspaper"></i> Blog</a>
+            <a href="customers/index.html" class="navbar__dropdown-item"><i class="fa-solid fa-quote-left"></i> Customers</a>
+            <a href="faq.html" class="navbar__dropdown-item"><i class="fa-solid fa-circle-question"></i> FAQ</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="navbar__right">
+      <a href="login.html" class="btn btn--ghost btn--sm">Log in</a>
+      <a href="register.html" class="btn btn--primary btn--sm">Get started</a>
+      <button class="navbar__toggle" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </div>
+</header>
+
+<div class="navbar__mobile">
+  <div class="navbar__mobile-head">
+    <a href="index.html" class="navbar__logo">
+      <img src="assets/public/logo.png" alt="Meridian" style="width:28px;height:28px;border-radius:6px;">
+      Meridian
+    </a>
+    <button class="navbar__mobile-close" aria-label="Close menu"><i class="fa-solid fa-xmark" style="font-size:20px;"></i></button>
+  </div>
+  <nav class="navbar__mobile-links">
+    <a href="features.html" class="navbar__mobile-link">Features</a>
+    <a href="use-cases.html" class="navbar__mobile-link">Solutions</a>
+    <a href="pricing.html" class="navbar__mobile-link">Pricing</a>
+    <a href="blog/index.html" class="navbar__mobile-link">Resources</a>
+    <a href="try-agent.html" class="navbar__mobile-link">Try an Agent</a>
+  </nav>
+  <div class="navbar__mobile-cta">
+    <a href="login.html" class="btn btn--secondary btn--full">Log in</a>
+    <a href="register.html" class="btn btn--primary btn--full">Get started</a>
+  </div>
+</div>
+
+<main>
+
+<section class="section simple-hero">
+  <div class="container">
+    <span class="simple-hero__eyebrow">About Meridian</span>
+    <h1 class="text-display">Building the workspace for the agent-run company</h1>
+    <p class="text-body-lg">We started Meridian because we believe every team will soon run part of its work through AI agents - and they'll need a place to build, approve, and trust them.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0;">
+  <div class="container" style="max-width:760px;">
+    <p class="text-body">Meridian AI was founded in 2023 by a small team of engineers and designers who had spent years building internal automation tools at larger tech companies. We kept hitting the same wall: automation was powerful, but brittle and invisible. When something broke, nobody knew why. When something needed a human decision, there was no clean way to pause and ask.</p>
+    <p class="text-body">So we set out to build something different - a workspace where AI agents are first-class citizens: versioned, observable, and accountable to the humans who rely on them. Today, Meridian powers agents that qualify leads, triage support tickets, reconcile invoices, and summarize meetings for teams across sales, support, operations, and finance.</p>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="text-h2">What we believe</h2>
+    </div>
+    <div class="value-grid">
+      <div class="value-card">
+        <div class="icon-tile"><i class="fa-solid fa-eye"></i></div>
+        <p class="text-h6" style="margin-top:16px;">Transparency by default</p>
+        <p class="text-body-sm" style="margin-top:8px;">Every agent action should be visible, explainable, and traceable back to a decision.</p>
+      </div>
+      <div class="value-card">
+        <div class="icon-tile"><i class="fa-solid fa-user-shield"></i></div>
+        <p class="text-h6" style="margin-top:16px;">Humans stay in control</p>
+        <p class="text-body-sm" style="margin-top:8px;">Approvals and guardrails aren't an afterthought - they're built into how agents run.</p>
+      </div>
+      <div class="value-card">
+        <div class="icon-tile"><i class="fa-solid fa-gauge-high"></i></div>
+        <p class="text-h6" style="margin-top:16px;">Ship fast, safely</p>
+        <p class="text-body-sm" style="margin-top:8px;">Good tooling means teams can move quickly without cutting corners on safety.</p>
+      </div>
+      <div class="value-card">
+        <div class="icon-tile"><i class="fa-solid fa-people-group"></i></div>
+        <p class="text-h6" style="margin-top:16px;">Built with our customers</p>
+        <p class="text-body-sm" style="margin-top:8px;">Our roadmap is shaped directly by the operators who use Meridian every day.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container" style="max-width:640px;">
+    <div class="section-head">
+      <h2 class="text-h2">Our story so far</h2>
+    </div>
+    <div class="timeline">
+      <div class="timeline__item">
+        <div class="timeline__year">2023</div>
+        <div><p class="text-h6">Meridian is founded</p><p class="text-body-sm" style="margin-top:6px;">Started by three engineers in San Francisco, building the first agent runtime.</p></div>
+      </div>
+      <div class="timeline__item">
+        <div class="timeline__year">2024</div>
+        <div><p class="text-h6">Public launch</p><p class="text-body-sm" style="margin-top:6px;">Opened up to the public with support, sales, and ops agent templates.</p></div>
+      </div>
+      <div class="timeline__item">
+        <div class="timeline__year">2025</div>
+        <div><p class="text-h6">1,200+ teams onboard</p><p class="text-body-sm" style="margin-top:6px;">Crossed 1,200 customer teams and shipped approval workflows and analytics.</p></div>
+      </div>
+      <div class="timeline__item">
+        <div class="timeline__year">2026</div>
+        <div><p class="text-h6">Today</p><p class="text-body-sm" style="margin-top:6px;">Growing the team and expanding what agents can safely do across the business.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="text-h2">Leadership</h2>
+    </div>
+    <div class="team-grid">
+      <div class="team-card"><div class="team-card__avatar">RN</div><p class="team-card__name">Riya Nair</p><p class="team-card__role">Co-founder &amp; CEO</p></div>
+      <div class="team-card"><div class="team-card__avatar">DC</div><p class="team-card__name">Daniel Cho</p><p class="team-card__role">Co-founder &amp; CTO</p></div>
+      <div class="team-card"><div class="team-card__avatar">AM</div><p class="team-card__name">Amara Mensah</p><p class="team-card__role">Head of Product</p></div>
+      <div class="team-card"><div class="team-card__avatar">TW</div><p class="team-card__name">Tom Walsh</p><p class="team-card__role">Head of Customer Success</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="cta-band cta-band--dark">
+      <h2 class="text-h2">Want to work on this with us?</h2>
+      <p class="text-body" style="margin-top:12px;">We're hiring across engineering, design, and go-to-market.</p>
+      <div class="row gap-3 row--center" style="margin-top:24px;">
+        <a href="contact.html" class="btn btn--primary btn--lg">Contact us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__col footer__brand-col">
+        <a href="index.html" class="footer__brand">
+          <img src="assets/public/logo.png" alt="Meridian" style="width:28px;height:28px;border-radius:6px;">
+          Meridian
+        </a>
+        <p class="footer__desc">The AI workspace where teams build, deploy, and manage intelligent agents.</p>
+      </div>
+      <div class="footer__col">
+        <p class="footer__heading">Product <i class="fa-solid fa-chevron-down footer__accordion-trigger"></i></p>
+        <div class="footer__links">
+          <a href="features.html">Features</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="try-agent.html">Try an Agent</a>
+          <a href="use-cases.html">Use-cases</a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <p class="footer__heading">Company <i class="fa-solid fa-chevron-down footer__accordion-trigger"></i></p>
+        <div class="footer__links">
+          <a href="about.html">About</a>
+          <a href="customers/index.html">Customers</a>
+          <a href="blog/index.html">Blog</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <p class="footer__heading">Resources <i class="fa-solid fa-chevron-down footer__accordion-trigger"></i></p>
+        <div class="footer__links">
+          <a href="resources.html">Resource hub</a>
+          <a href="faq.html">FAQ</a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <p class="footer__heading">Legal <i class="fa-solid fa-chevron-down footer__accordion-trigger"></i></p>
+        <div class="footer__links">
+          <a href="legal/privacy-policy.html">Privacy Policy</a>
+          <a href="legal/terms-of-service.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copyright">© 2026 Meridian AI, Inc. All rights reserved.</p>
+      <div class="footer__social">
+        <a href="#" aria-label="Twitter/X"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<div class="cookie-banner">
+  <p class="text-body-sm" style="color:rgba(255,255,255,0.85);">We use cookies to improve your experience. By using Meridian, you agree to our <a href="legal/privacy-policy.html" style="text-decoration:underline;">Privacy Policy</a>.</p>
+  <button class="btn btn--dark btn--sm cookie-banner__btn" style="align-self:flex-start;">Got it</button>
+</div>
+
+<script src="js/data/mock-data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

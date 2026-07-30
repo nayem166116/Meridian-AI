@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create your account - Meridian AI</title>
+<meta name="description" content="Create a free Meridian AI account. No credit card required.">
+<link rel="icon" href="assets/public/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/navbar.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/pages/auth.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="container navbar__inner">
+    <div class="navbar__left">
+      <a href="index.html" class="navbar__logo">
+        <img src="assets/public/logo.png" alt="Meridian" style="width:28px;height:28px;border-radius:6px;">
+        Meridian
+      </a>
+    </div>
+    <div class="navbar__right">
+      <span class="text-body-sm" style="color:var(--text-muted);">Already have an account?</span>
+      <a href="login.html" class="btn btn--secondary btn--sm">Log in</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<div class="auth-wrap">
+  <div class="auth-card">
+    <div class="auth-card__logo">
+      <img src="assets/public/logo.png" alt="Meridian" style="width:40px;height:40px;border-radius:9px;">
+    </div>
+    <div class="auth-card__head">
+      <h1 class="text-h3">Create your account</h1>
+      <p class="text-body-sm">Start free. No credit card required.</p>
+    </div>
+
+    <div class="auth-social">
+      <button type="button" class="btn btn--secondary btn--full"><i class="fa-brands fa-google"></i> Sign up with Google</button>
+      <button type="button" class="btn btn--secondary btn--full"><i class="fa-brands fa-microsoft"></i> Sign up with Microsoft</button>
+    </div>
+
+    <div class="auth-divider"><span>or sign up with email</span></div>
+
+    <form class="auth-form" data-auth-form>
+      <div class="field">
+        <label class="field__label" for="reg-name">Full name</label>
+        <input class="input" type="text" id="reg-name" placeholder="Jordan Lee" required>
+      </div>
+      <div class="field">
+        <label class="field__label" for="reg-email">Work email</label>
+        <input class="input" type="email" id="reg-email" placeholder="you@company.com" required>
+      </div>
+      <div class="field">
+        <label class="field__label" for="reg-password">Password</label>
+        <div class="input-icon-wrap">
+          <input class="input" type="password" id="reg-password" placeholder="At least 8 characters" required>
+          <button type="button" class="input-icon-wrap__btn" aria-label="Show password" data-toggle-password><i class="fa-solid fa-eye"></i></button>
+        </div>
+      </div>
+      <label class="auth-check">
+        <input type="checkbox" required>
+        <span>I agree to the <a href="legal/terms-of-service.html">Terms of Service</a> and <a href="legal/privacy-policy.html">Privacy Policy</a>.</span>
+      </label>
+      <button type="submit" class="btn btn--primary btn--full" data-auth-submit>Create account</button>
+    </form>
+
+    <p class="auth-footer-link">Already have an account? <a href="login.html">Log in</a></p>
+  </div>
+</div>
+</main>
+
+<script src="js/main.js"></script>
+<script src="js/auth.js"></script>
+<script>
+document.querySelectorAll('[data-toggle-password]').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    var input = btn.previousElementSibling;
+    var icon = btn.querySelector('i');
+    if (input.type === 'password') { input.type = 'text'; icon.className = 'fa-solid fa-eye-slash'; }
+    else { input.type = 'password'; icon.className = 'fa-solid fa-eye'; }
+  });
+});
+</script>
+</body>
+</html>

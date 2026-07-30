@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI agents vs. traditional automation: what's actually different - Meridian AI</title>
+<meta name="description" content="How to tell whether you need a traditional automation tool or an AI agent.">
+<link rel="icon" href="../assets/public/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/layout.css">
+<link rel="stylesheet" href="../css/components.css">
+<link rel="stylesheet" href="../css/navbar.css">
+<link rel="stylesheet" href="../css/footer.css">
+<link rel="stylesheet" href="../css/pages/content.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="container navbar__inner">
+    <div class="navbar__left">
+      <a href="../index.html" class="navbar__logo">
+        <img src="../assets/public/logo.png" alt="Meridian" style="width:28px;height:28px;border-radius:6px;">
+        Meridian
+      </a>
+    </div>
+    <div class="navbar__right">
+      <a href="../login.html" class="btn btn--ghost btn--sm">Log in</a>
+      <a href="../register.html" class="btn btn--primary btn--sm">Get started</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="section">
+  <div class="container prose">
+    <a href="index.html" class="text-body-sm" style="color:var(--color-primary-600); font-weight:600;"><i class="fa-solid fa-arrow-left"></i> Back to blog</a>
+    <h1 class="text-display" style="margin-top:var(--space-4);">AI agents vs. traditional automation: what's actually different</h1>
+    <div class="prose__meta" style="margin-top:var(--space-4);">
+      <span>Daniel Cho, Co-founder &amp; CTO</span> &middot; <span>6 min read</span>
+    </div>
+
+    <p>"Automation" and "AI agent" get thrown around as if they're interchangeable. They're not, and picking the wrong one for a given problem is a common reason automation projects stall out. Here's a clear way to think about the difference.</p>
+
+    <h2>Traditional automation follows a fixed path</h2>
+    <p>Classic workflow automation - if this, then that - is excellent when the steps are known in advance and the inputs are structured. Sync a new Salesforce lead to your email tool. Move a Stripe payment record into your accounting software. These are deterministic: the same input always produces the same output, and there's no judgment involved.</p>
+
+    <h2>AI agents handle ambiguity and judgment</h2>
+    <p>Agents earn their keep when the input is messy or unstructured, and the right action depends on understanding context rather than matching a fixed rule. Reading a free-form support email and deciding whether it's an urgent billing issue or a low-priority question. Reading a meeting transcript and identifying who owns which follow-up. Reading a lead's job title and inferring whether they have budget authority.</p>
+    <p>These are tasks a human would do by reading, reasoning, and using judgment - which is exactly what makes them a poor fit for rigid if/then rules, and a good fit for an agent powered by a language model.</p>
+
+    <h2>A simple test</h2>
+    <p>Ask yourself: could I write this as a flowchart with clear yes/no branches, using only structured fields? If yes, traditional automation will be faster, cheaper, and more predictable. If the honest answer involves "it depends on how you read this text" or "a person would need to use judgment here," you're looking at an agent problem.</p>
+    <p>In practice, most real workflows are a blend. A lead comes in (structured automation syncs it to your CRM), an agent reads the free-text notes and scores it, and then structured automation routes it to the right rep's queue based on that score. Meridian is built for exactly this kind of hybrid: agents that plug into the structured systems you already use.</p>
+
+    <blockquote>Don't replace your automation - add judgment where your automation runs out of rules.</blockquote>
+
+    <p style="margin-top:var(--space-8);"><a href="../use-cases.html" style="color:var(--color-primary-600); font-weight:600;">See real use-cases across teams &rarr;</a></p>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__bottom" style="border-top:none; padding-top:0;">
+      <p class="footer__copyright">© 2026 Meridian AI, Inc. All rights reserved.</p>
+      <div class="footer__social">
+        <a href="#" aria-label="Twitter/X"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

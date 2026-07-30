@@ -1,0 +1,20 @@
+/* =============================================
+   USE-CASES.CSS
+============================================= */
+
+.usecase-hero { text-align: center; padding-top: var(--space-10); }
+
+.persona-nav { display: flex; flex-wrap: wrap; justify-content: center; gap: var(--space-3); margin-top: var(--space-8); }
+.persona-nav__item {
+  display: flex; align-items: center; gap: var(--space-2); padding: var(--space-3) var(--space-5);
+  border: 1px solid var(--border-default); border-radius: var(--radius-full); font-size: 14px; font-weight: 500; color: var(--text-body);
+  background: var(--color-white);
+}
+.persona-nav__item i { color: var(--color-primary-600); }
+
+.usecase-block { padding-block: var(--space-10); border-bottom: 1px solid var(--border-default); }
+.usecase-block:last-of-type { border-bottom: none; }
+.usecase-block__meta { display: flex; align-items: center; gap: var(--space-3); margin-bottom: var(--space-4); }
+.usecase-block__stats { display: flex; gap: var(--space-8); margin-top: var(--space-6); }
+.usecase-block__stat-num { font-size: 28px; font-weight: 700; color: var(--color-primary-600); }
+.usecase-block__stat-label { font-size: 13px; color: var(--text-muted); }

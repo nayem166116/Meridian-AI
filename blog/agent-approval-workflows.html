@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why approval workflows are the missing piece in AI automation - Meridian AI</title>
+<meta name="description" content="Why the best agent systems put a human checkpoint exactly where it matters, and nowhere else.">
+<link rel="icon" href="../assets/public/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/layout.css">
+<link rel="stylesheet" href="../css/components.css">
+<link rel="stylesheet" href="../css/navbar.css">
+<link rel="stylesheet" href="../css/footer.css">
+<link rel="stylesheet" href="../css/pages/content.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="container navbar__inner">
+    <div class="navbar__left">
+      <a href="../index.html" class="navbar__logo">
+        <img src="../assets/public/logo.png" alt="Meridian" style="width:28px;height:28px;border-radius:6px;">
+        Meridian
+      </a>
+    </div>
+    <div class="navbar__right">
+      <a href="../login.html" class="btn btn--ghost btn--sm">Log in</a>
+      <a href="../register.html" class="btn btn--primary btn--sm">Get started</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="section">
+  <div class="container prose">
+    <a href="index.html" class="text-body-sm" style="color:var(--color-primary-600); font-weight:600;"><i class="fa-solid fa-arrow-left"></i> Back to blog</a>
+    <h1 class="text-display" style="margin-top:var(--space-4);">Why approval workflows are the missing piece in most AI automation</h1>
+    <div class="prose__meta" style="margin-top:var(--space-4);">
+      <span>Amara Mensah, Head of Product</span> &middot; <span>7 min read</span>
+    </div>
+
+    <p>Most automation tools force teams into an uncomfortable choice: give the system full autonomy, or keep a human doing everything manually. Neither option holds up well in practice. Full autonomy feels risky the moment real money, real customers, or real compliance obligations are on the line. Fully manual work doesn't scale, and it wastes the very people you hired for judgment, not repetition.</p>
+
+    <p>The teams getting the most value from AI agents today have found a third path: agents that do the full body of work - research, drafting, calculations, routing - but pause at specific, well-defined checkpoints for a human to approve before anything irreversible happens.</p>
+
+    <h2>What a good checkpoint looks like</h2>
+    <p>Not every step needs a human in the loop. The trick is identifying which steps actually carry risk. A support agent drafting a reply doesn't need approval. That same agent issuing a $400 refund probably does. A finance agent categorizing an expense doesn't need approval. That agent approving a vendor payment definitely does.</p>
+    <p>Good approval checkpoints share three properties:</p>
+    <ul>
+      <li>They sit right before an action that's expensive, irreversible, or customer-facing.</li>
+      <li>They show the reviewer exactly what the agent found and why it's recommending this action - not just a yes/no button.</li>
+      <li>They have a clear, fast path to approve, reject, or edit before it moves forward.</li>
+    </ul>
+
+    <h2>Why "just review everything" doesn't work</h2>
+    <p>Teams that try to route every single agent action through review usually abandon the effort within weeks. Reviewers get flooded, approval queues back up, and the agent ends up slower than the manual process it replaced. The result is review fatigue - people start rubber-stamping without really checking, which defeats the purpose entirely.</p>
+    <blockquote>The goal isn't more human oversight. It's oversight in the right place, so people can trust everything else the agent does without checking it.</blockquote>
+
+    <h2>How this shows up in Meridian</h2>
+    <p>In Meridian, any step in an agent's workflow can be flagged as "requires approval." When an agent hits that step, it pauses, sends a notification, and shows the reviewer a clear summary card - what the agent is proposing, the data behind it, and one-click approve or reject actions. Everything else in the workflow runs automatically. Teams typically start by requiring approval on almost everything, then relax those checkpoints over time as they build confidence in a given agent's accuracy.</p>
+    <p>That gradual trust-building process - not a one-time configuration - is what makes agent adoption durable inside a real organization.</p>
+
+    <p style="margin-top:var(--space-8);"><a href="../features.html" style="color:var(--color-primary-600); font-weight:600;">See how approval workflows work in Meridian &rarr;</a></p>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__bottom" style="border-top:none; padding-top:0;">
+      <p class="footer__copyright">© 2026 Meridian AI, Inc. All rights reserved.</p>
+      <div class="footer__social">
+        <a href="#" aria-label="Twitter/X"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

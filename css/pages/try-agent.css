@@ -1,0 +1,56 @@
+/* =============================================
+   TRY-AGENT.CSS - public interactive tool demo
+============================================= */
+
+.tool-hero { text-align: center; padding-top: var(--space-10); }
+
+.tool-card { border: 1px solid var(--border-default); border-radius: var(--radius-xl); background: var(--color-white); box-shadow: var(--shadow-sm); overflow: hidden; margin-top: var(--space-8); }
+.tool-card__tabs { padding: 0 var(--space-6); border-bottom: 1px solid var(--border-default); background: var(--bg-surface-alt); }
+.tool-card__body { display: grid; grid-template-columns: 1fr 1fr; gap: 0; min-height: 460px; }
+.tool-card__input-panel { padding: var(--space-6); border-right: 1px solid var(--border-default); display: flex; flex-direction: column; gap: var(--space-5); }
+.tool-card__output-panel { padding: var(--space-6); background: var(--bg-surface-alt); display: flex; flex-direction: column; }
+
+.tool-card__examples { display: flex; flex-wrap: wrap; gap: var(--space-2); align-items: center; }
+.chip {
+  height: 30px; padding: 0 var(--space-3); border-radius: var(--radius-full);
+  border: 1px solid var(--border-default); background: var(--color-white);
+  font-size: 13px; color: var(--text-body); max-width: 100%;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.chip:hover { border-color: var(--color-primary-600); color: var(--color-primary-700); }
+
+.tool-state { display: none; flex: 1; flex-direction: column; }
+.tool-state.is-active { display: flex; }
+
+.tool-state--empty { align-items: center; justify-content: center; text-align: center; color: var(--text-muted); gap: var(--space-3); }
+.tool-state--empty i { font-size: 32px; color: var(--color-secondary-300); }
+
+.tool-state--loading { align-items: flex-start; justify-content: center; gap: var(--space-5); }
+.tool-state--loading .progress-bar { margin-bottom: var(--space-2); }
+.loading-steps { display: flex; flex-direction: column; gap: var(--space-3); width: 100%; }
+.loading-step { display: flex; align-items: center; gap: var(--space-3); font-size: 14px; color: var(--text-muted); }
+.loading-step__icon { width: 20px; height: 20px; border-radius: 50%; border: 2px solid var(--color-secondary-200); flex-shrink: 0; display: flex; align-items: center; justify-content: center; font-size: 11px; transition: all var(--ease); }
+.loading-step.is-active .loading-step__icon { border-color: var(--color-primary-600); }
+.loading-step.is-active { color: var(--text-heading); }
+.loading-step.is-done .loading-step__icon { background: var(--color-primary-600); border-color: var(--color-primary-600); color: var(--color-white); }
+.loading-step.is-done { color: var(--text-heading); }
+
+.tool-result { display: flex; flex-direction: column; gap: var(--space-4); width: 100%; }
+.tool-result__header { display: flex; align-items: center; gap: var(--space-2); }
+.tool-result__score { display: flex; align-items: baseline; gap: var(--space-2); }
+.tool-result__score-num { font-size: 32px; font-weight: 700; color: var(--color-primary-600); }
+.tool-result__block { background: var(--color-white); border: 1px solid var(--border-default); border-radius: var(--radius-md); padding: var(--space-4); font-size: 14px; color: var(--text-body); line-height: 22px; }
+.tool-result__list { display: flex; flex-direction: column; gap: var(--space-2); }
+.tool-result__list-item { display: flex; gap: var(--space-2); font-size: 14px; color: var(--text-body); }
+.tool-result__list-item i { color: var(--color-primary-600); margin-top: 4px; flex-shrink: 0; }
+
+.tool-state--error { align-items: center; justify-content: center; text-align: center; gap: var(--space-3); }
+.tool-state--error i { font-size: 32px; color: var(--color-secondary-900); }
+
+.field__error.is-visible { display: flex; }
+
+@media (max-width: 1024px) {
+  .tool-card__body { grid-template-columns: 1fr; min-height: 0; }
+  .tool-card__input-panel { border-right: none; border-bottom: 1px solid var(--border-default); }
+  .tool-state--empty, .tool-state--loading, .tool-state--error { min-height: 260px; }
+}

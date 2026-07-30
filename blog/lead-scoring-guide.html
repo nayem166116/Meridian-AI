@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A practical guide to AI lead scoring for small sales teams - Meridian AI</title>
+<meta name="description" content="A simple framework for scoring leads with AI, no data science team required.">
+<link rel="icon" href="../assets/public/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/layout.css">
+<link rel="stylesheet" href="../css/components.css">
+<link rel="stylesheet" href="../css/navbar.css">
+<link rel="stylesheet" href="../css/footer.css">
+<link rel="stylesheet" href="../css/pages/content.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="container navbar__inner">
+    <div class="navbar__left">
+      <a href="../index.html" class="navbar__logo">
+        <img src="../assets/public/logo.png" alt="Meridian" style="width:28px;height:28px;border-radius:6px;">
+        Meridian
+      </a>
+    </div>
+    <div class="navbar__right">
+      <a href="../login.html" class="btn btn--ghost btn--sm">Log in</a>
+      <a href="../register.html" class="btn btn--primary btn--sm">Get started</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="section">
+  <div class="container prose">
+    <a href="index.html" class="text-body-sm" style="color:var(--color-primary-600); font-weight:600;"><i class="fa-solid fa-arrow-left"></i> Back to blog</a>
+    <h1 class="text-display" style="margin-top:var(--space-4);">A practical guide to AI lead scoring for small sales teams</h1>
+    <div class="prose__meta" style="margin-top:var(--space-4);">
+      <span>Tom Walsh, Head of Customer Success</span> &middot; <span>5 min read</span>
+    </div>
+
+    <p>If you're a five-to-fifteen person sales team, you don't need a data science team or a six-month scoring model rollout. You need a simple, explainable way to tell your reps which leads to call first. Here's a framework that works well for teams just getting started with AI-assisted lead scoring.</p>
+
+    <h2>Start with three signal categories</h2>
+    <p>Instead of dozens of weighted fields, group signals into three buckets:</p>
+    <ul>
+      <li><strong>Fit</strong> - does this person and company match your ideal customer profile? Title, company size, industry.</li>
+      <li><strong>Intent</strong> - what have they actually done? Requested a demo, visited pricing twice, replied to an email.</li>
+      <li><strong>Engagement freshness</strong> - how recently did they take that action? A demo request from today matters more than one from three weeks ago.</li>
+    </ul>
+    <p>A lead that scores high on all three is your hottest lead. A lead that scores high on fit but has taken no action yet should go to a nurture sequence, not a rep's call list.</p>
+
+    <h2>Let the agent explain itself</h2>
+    <p>The biggest reason reps ignore a lead score is that they don't trust it. A raw number like "82" means nothing on its own. Good AI lead scoring shows its work: "Senior title with buying authority, company size matches ICP, requested a demo within the last 24 hours." When reps can see the reasoning, they act on the score instead of second-guessing it.</p>
+
+    <h2>Review and recalibrate monthly</h2>
+    <p>Pull a sample of scored leads each month and check them against what actually happened - did the hot leads convert? Did any cold leads turn out to be good? Feed that back into your scoring criteria. This doesn't require machine learning expertise, just a recurring 30-minute review with your sales lead.</p>
+
+    <blockquote>A scoring system that reps trust and use consistently beats a more "accurate" model that sits unused.</blockquote>
+
+    <h2>Try it yourself</h2>
+    <p>You can see this exact framework in action - fit, intent, and a plain-language recommendation - on our live lead qualifier demo, no signup required.</p>
+
+    <p style="margin-top:var(--space-8);"><a href="../try-agent.html" style="color:var(--color-primary-600); font-weight:600;">Try the Lead Qualifier agent &rarr;</a></p>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__bottom" style="border-top:none; padding-top:0;">
+      <p class="footer__copyright">© 2026 Meridian AI, Inc. All rights reserved.</p>
+      <div class="footer__social">
+        <a href="#" aria-label="Twitter/X"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+/* =============================================
+   PRICING.CSS
+============================================= */
+
+.pricing-hero { text-align: center; padding-top: var(--space-10); }
+
+.billing-toggle { display: flex; align-items: center; justify-content: center; gap: var(--space-3); margin-top: var(--space-8); }
+.billing-toggle__label { font-size: 14px; font-weight: 500; color: var(--text-muted); }
+.billing-toggle__label.is-active { color: var(--text-heading); }
+
+.toggle-switch {
+  width: 44px; height: 26px; border-radius: var(--radius-full); background: var(--color-secondary-200);
+  position: relative; flex-shrink: 0; transition: background var(--ease);
+}
+.toggle-switch__thumb {
+  position: absolute; top: 3px; left: 3px; width: 20px; height: 20px; border-radius: 50%;
+  background: var(--color-white); box-shadow: var(--shadow-sm); transition: transform var(--ease);
+}
+.toggle-switch.is-on { background: var(--color-primary-600); }
+.toggle-switch.is-on .toggle-switch__thumb { transform: translateX(18px); }
+
+.pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-6); margin-top: var(--space-10); align-items: stretch; }
+.pricing-card { display: flex; flex-direction: column; }
+.pricing-card__price { display: flex; align-items: baseline; gap: var(--space-1); margin-top: var(--space-2); }
+.pricing-card__price .amount { font-size: 40px; font-weight: 700; color: var(--text-heading); letter-spacing: -0.01em; }
+.pricing-card__list { margin-top: var(--space-5); display: flex; flex-direction: column; gap: var(--space-3); flex: 1; }
+.pricing-card__list-item { display: flex; align-items: flex-start; gap: var(--space-3); font-size: 14px; color: var(--text-body); }
+.pricing-card__list-item i { color: var(--color-primary-600); margin-top: 3px; }
+.pricing-card__cta { margin-top: var(--space-6); }
+
+.price-table { width: 100%; border-collapse: collapse; margin-top: var(--space-6); }
+.price-table th, .price-table td { padding: var(--space-4); text-align: center; border-bottom: 1px solid var(--border-default); font-size: 14px; }
+.price-table th:first-child, .price-table td:first-child { text-align: left; color: var(--text-heading); font-weight: 500; }
+.price-table thead th { font-size: 13px; color: var(--text-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.03em; }
+.price-table td i.fa-check { color: var(--color-primary-600); }
+.price-table td i.fa-xmark { color: var(--color-secondary-300); }
+.price-table tbody tr:last-child td { border-bottom: none; }
+
+@media (max-width: 1024px) {
+  .pricing-grid { grid-template-columns: 1fr; max-width: 420px; margin-inline: auto; }
+  .price-table { display: block; overflow-x: auto; white-space: nowrap; }
+}

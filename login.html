@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Log in - Meridian AI</title>
+<meta name="description" content="Log in to your Meridian AI account.">
+<link rel="icon" href="assets/public/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/navbar.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/pages/auth.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="container navbar__inner">
+    <div class="navbar__left">
+      <a href="index.html" class="navbar__logo">
+        <img src="assets/public/logo.png" alt="Meridian" style="width:28px;height:28px;border-radius:6px;">
+        Meridian
+      </a>
+    </div>
+    <div class="navbar__right">
+      <span class="text-body-sm" style="color:var(--text-muted);">New here?</span>
+      <a href="register.html" class="btn btn--secondary btn--sm">Create account</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<div class="auth-wrap">
+  <div class="auth-card">
+    <div class="auth-card__logo">
+      <img src="assets/public/logo.png" alt="Meridian" style="width:40px;height:40px;border-radius:9px;">
+    </div>
+    <div class="auth-card__head">
+      <h1 class="text-h3">Welcome back</h1>
+      <p class="text-body-sm">Log in to your Meridian workspace.</p>
+    </div>
+
+    <div class="auth-social">
+      <button type="button" class="btn btn--secondary btn--full"><i class="fa-brands fa-google"></i> Continue with Google</button>
+      <button type="button" class="btn btn--secondary btn--full"><i class="fa-brands fa-microsoft"></i> Continue with Microsoft</button>
+    </div>
+
+    <div class="auth-divider"><span>or log in with email</span></div>
+
+    <form class="auth-form" data-auth-form>
+      <div class="field">
+        <label class="field__label" for="login-email">Email address</label>
+        <input class="input" type="email" id="login-email" placeholder="you@company.com" required>
+      </div>
+      <div class="field">
+        <div class="auth-form__row">
+          <label class="field__label" for="login-password">Password</label>
+          <a href="#" class="auth-form__meta">Forgot password?</a>
+        </div>
+        <div class="input-icon-wrap">
+          <input class="input" type="password" id="login-password" placeholder="Enter your password" required>
+          <button type="button" class="input-icon-wrap__btn" aria-label="Show password" data-toggle-password><i class="fa-solid fa-eye"></i></button>
+        </div>
+      </div>
+      <button type="submit" class="btn btn--primary btn--full" data-auth-submit>Log in</button>
+    </form>
+
+    <p class="auth-footer-link">Don't have an account? <a href="register.html">Sign up free</a></p>
+  </div>
+</div>
+</main>
+
+<script src="js/main.js"></script>
+<script src="js/auth.js"></script>
+<script>
+document.querySelectorAll('[data-toggle-password]').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    var input = btn.previousElementSibling;
+    var icon = btn.querySelector('i');
+    if (input.type === 'password') { input.type = 'text'; icon.className = 'fa-solid fa-eye-slash'; }
+    else { input.type = 'password'; icon.className = 'fa-solid fa-eye'; }
+  });
+});
+</script>
+</body>
+</html>
